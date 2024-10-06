@@ -13,8 +13,10 @@ export async function createCheckoutSession(stripe_price: string) {
         quantity: 1,
       },
     ],
-    success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000",
+    success_url: "https://nextjs-stripe-subscription-three.vercel.app/success",
+    cancel_url: "https://nextjs-stripe-subscription-three.vercel.app",
+    // success_url: "http://localhost:3000/success",
+    // cancel_url: "http://localhost:3000",
 
     // payment_method_options: {
     //   boleto: {
